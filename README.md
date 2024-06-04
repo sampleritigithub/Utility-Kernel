@@ -24,3 +24,6 @@
   No 5. is _sayvars_: It just prints all the variables.
 
   **NOTE: You could write variables like: [testvar = testval]. You could also do math operations.**
+
+
+## PLEASE CONTRIBUTE TO THE KERNEL
