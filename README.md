@@ -1,29 +1,28 @@
 # Utility-Kernel
-# The Utility Kernel is a great program which can help you in:
+_Advertisement:_ You're on someone's computer. That computer does not have python or any programming language to easily manipulate the system.
+What do you do? You download the Utility Kernel with the default Commissioner and start programming in python or in one of the many scripting languages the Utility Kernel provides (see the notes below for how).
 
-  1. Centralizing Your Code
-  2. Stabilizing Your Code
-  3. Making Your Code More Efficient and Compact
+_How does the Utility Kernel work? (explanation of the starting process)_ The Utility Kernel is starts by starting its many socket pipes (localhost:9000,9050,9100,9150,9200) that handle the interpretation of sent commands, each pipe having a special role. Then it starts the _commission.exe_ file which acts like a shell and interfaces with the Kernel's many pipes for the user to interact with. 
 
-# How to use the Kernel:
+_Purpose of each pipe:_
 
-  **Intro**: The Kernel is a program with two blocks (classes). _System_, and _Process_. By default, the program will set up a _System_ class ready for production. Also by default, the program will look for _Kernel Scripts_ in the _Programs_ directory. 
+  9000: Kinect Terminal by https://github.com/AstroBolo
   
-  **Kernel Scripts**: _Kernel Scripting_ is a scripting language which is straight-forward for any python programmer--**but the only problem is the command set (the functions) is low.**
-  
-  **How to write Kernel Scripts**: There are _5_ main commands in the interface: 
+  9050: Launch Anything by me (Tobey)
 
-  No. 1 is _print_: You just write _print_, space, and the thing you want to write [Example: print Test]. You could also use the dollar sign ($) to indicate a variable [Example: print $testVariable]. 
+  9100: 3DV Utility Kernel by me (Tobey)
 
-  No. 2 is _promptuser_: It just asks the user for a python line to execute.
+  9150: NT System Shell by Microsoft Corporation (https://microsoft.com)
 
-  No. 3 is _writefile_: It just writes a file [Example: writefile filename data1].
+  9200: Logging Interface by me (Tobey)
 
-  No 4. is _readfile_: It just reads a file [Example: readfile filename].
+_Important Notes:_ 
 
-  No 5. is _sayvars_: It just prints all the variables.
-
-  **NOTE: You could write variables like: [testvar = testval]. You could also do math operations.**
-
+  1. When calling 9000 (Kinect Terminal), _echo me_ is changed to _echo_me_.
+  2. When calling 9100 (Utility Kernel 3DV), _promptuser_ is changed to _prompt_.
+  3. In the Kernel **all** inputs are dismissed and are converted to the arguments which come after the command (eg. echo_me test, 1 regedit, prompt print("Test"), et cetera...).
+  4. In **all** the terminals error handling is upgraded.
+  5. In the Kernel you can use python by sending _prompt_ and your command to 9100.
+  6. If you just want the Kernel for automation (**NOT** creating apps) you could just use the default commissioner (commission.exe) which asks you for commands and then finds which terminal is the best for your command and sends it. It starts up with the Kernel as mentioned above.
 
 ## PLEASE CONTRIBUTE TO THE KERNEL
