@@ -5,4 +5,6 @@ _How does the Utility Kernel work? (explanation of the starting process)_ The Ut
 
 _How to use the Kernel_ For now, you need to understand a small bit of python because I can't currently make a full list of commands and how they work. Just review the python program and/or use AI to give you some help with the commands. Then write a startup.util file in your osutildir adherent to the 5a scripting system, run the kernel, and that's it!
 
+**Startup.util sample script included**
+
 ## PLEASE CONTRIBUTE TO THE KERNEL
