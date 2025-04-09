@@ -1,28 +1,8 @@
 # Utility-Kernel
-_Advertisement:_ You're on someone's computer. That computer does not have python or any programming language to easily manipulate the system.
-What do you do? You download the Utility Kernel with the default Commissioner and start programming in python or in one of the many scripting languages the Utility Kernel provides (see the notes below for how).
+_Advertisement:_ You're a normal somebody. You don't want to learn programming. You just want to do stuff quicly. What do you learn? You learn Utility Scripting. Utility Scripting, exclusively for the Utility Kernel, is a scripting language made only for the Utility Kernel. It is a way to not get advanced while still doing what you want, the way you want. You write a Utility Script, and then run the Kernel so you can run your program. Utility Kernel 5 Alpha combines the best of 3dv, and 4fv, the older versions of Utility Kernel. 5a adds new commands, like always-do, which is a loop, and do-input, which is basically a way so that you type your code while running the kernel, though not editing your main program. The parsing system is now a full-blown interpreter. It uses a syntax system similar to PowerShell.
 
-_How does the Utility Kernel work? (explanation of the starting process)_ The Utility Kernel is starts by starting its many socket pipes (localhost:9000,9050,9100,9150,9200) that handle the interpretation of sent commands, each pipe having a special role. Then it starts the _commission.exe_ file which acts like a shell and interfaces with the Kernel's many pipes for the user to interact with. 
+_How does the Utility Kernel work? (explanation of the starting process)_ The Utility Kernel is starts by running the startup.util file in your osutildir, and that's pretty much it. Your osutildir is in your LocalLow Appdata folder's osutildir folder.
 
-_Purpose of each pipe:_
-
-  9000: Kinect Terminal by https://github.com/AstroBolo
-  
-  9050: Launch Anything by me (Tobey)
-
-  9100: 3DV Utility Kernel by me (Tobey)
-
-  9150: NT System Shell by Microsoft Corporation (https://microsoft.com)
-
-  9200: Logging Interface by me (Tobey)
-
-_Important Notes:_ 
-
-  1. When calling 9000 (Kinect Terminal), _echo me_ is changed to _echo_me_.
-  2. When calling 9100 (Utility Kernel 3DV), _promptuser_ is changed to _prompt_.
-  3. In the Kernel **all** inputs are dismissed and are converted to the arguments which come after the command (eg. echo_me test, 1 regedit, prompt print("Test"), et cetera...).
-  4. In **all** the terminals error handling is upgraded.
-  5. In the Kernel you can use python by sending _prompt_ and your command to 9100.
-  6. If you just want the Kernel for automation (**NOT** creating apps) you could just use the default commissioner (commission.exe) which asks you for commands and then finds which terminal is the best for your command and sends it. It starts up with the Kernel as mentioned above.
+_How to use the Kernel_ For now, you need to understand a small bit of python because I can't currently make a full list of commands and how they work. Just review the python program and/or use AI to give you some help with the commands. Then write a startup.util file in your osutildir adherent to the 5a scripting system, run the kernel, and that's it!
 
 ## PLEASE CONTRIBUTE TO THE KERNEL
