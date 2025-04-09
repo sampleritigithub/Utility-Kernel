@@ -1,0 +1,13 @@
+output-givendata ===============================
+output-givendata Welcome to the Utility Kernel 5 Alpha (Sample script)
+output-givendata -------------------------------
+output-givendata Kernel Build: !!get-kernbuild
+output-givendata Operating System: !!get-ops
+output-givendata Hostname: !!get-hostName
+output-givendata System Date: !!get-date
+output-givendata User: !!get-user
+output-givendata -------------------------------
+assign-variable startupStatus Startup completed successfully. Enjoy your session!
+output-givendata !!get-startupStatus
+output-givendata ===============================
+always-do do-input
