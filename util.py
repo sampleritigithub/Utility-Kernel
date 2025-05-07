@@ -1,7 +1,7 @@
 varsDictionary = {"debugMode":"False"}
 class Library:
     def __init__(self):
-        import os,time,psutil,socket,platform,ipinfo,cpuinfo
+        import os,time,psutil,socket,platform,ipinfo
         self.act = "013916e7012dd7"
         try: 
             handler = ipinfo.getHandler(self.act)
@@ -16,7 +16,6 @@ class Library:
             self.timezone = details.timezone
             self.allIPinfo = str(details.all)
         except: pass
-        self.processorBN = cpuinfo.get_cpu_info()["brand_raw"]
         self.user = os.getenv("USERNAME", "default_user").replace('\\', '/')
         self.tmpdir = os.getenv("TMP", "/tmp").replace('\\', '/')
         self.homedrv = os.getenv("HOMEDRIVE", "/").replace('\\', '/')
@@ -69,8 +68,6 @@ class NetworkChannel:
         self.socket.bind(("localhost",int(self.channel)))
         self.socket.listen()
         import platform
-        import cpuinfo
-        garbage=str(cpuinfo.get_cpu_info()['brand_raw'])+platform.system()+str(platform.architecture())+platform.processor()+platform.node()+platform.release()
         def threader():
             while True:
                 conn,addr = self.socket.accept()
