@@ -1,2 +1,2 @@
 # Utility-Kernel
-Same functionality as 5a but with a varsDictionary variable called debugMode, which shows debug info when assigned to "True" via assign-variable. Program is updated to fix small bugs.
+Same functionality as 5b1 but with if statements and piping!!! Program is updated to fix a bug in IP info collection.
