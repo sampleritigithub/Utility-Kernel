@@ -52,7 +52,7 @@ class Library:
         self.processors = os.getenv('NUMBER_OF_PROCESSORS', '1').replace('\\', '/')
         self.allsyspaths = os.getenv('Path', '').replace('\\', '/')
         self.sysusrname = os.getenv('USERNAME', 'default_user').replace('\\', '/')
-        self.kernbuild = "Utility Interpreter 5 Beta Edition 2"
+        self.kernbuild = "Utility Interpreter Classic build 5R"
         self.copyright = "Copyright(c) Tobey Enterprises"
         self.pythoncopyright = "Copyright(c) Python Software Foundation"
         self.mscopyright = "Copyright(c) Microsoft Corporation"
